@@ -71,4 +71,30 @@ UHRF1 содержит несколько доменов, которые поз�
 
 Выравнивание было выполненно программой MegaX.
 
+## Таблицы с E-value и -log(Evalue) для 4х гистонов и выбранного белка
+
+**E-value**
+
+![image](https://github.com/TatyanaSidorova26/Project23_Individual/assets/114301236/00c576dc-36d7-4f3e-b038-4aed9358f47f)
+
+**-log(Evalue)**
+
+![image](https://github.com/TatyanaSidorova26/Project23_Individual/assets/114301236/d7b56b15-0a54-4280-bc5e-bcdd889c951b)
+ 
+Для сопоставления выбранных в гистонах последовательностей и модельных организмов использовались следующие команды в терминале (примеры):
+
+blastp -query protein.faa -db /mnt/storage/project_2023/proteomes/c.elegans.faa -out c.elegans.blast -outfmt 7
+
+blastp -query /home/tisidorova/H2A.fasta -db /mnt/storage/project_2023/proteomes/yeast.faa -out H2A_yeast.blast -outfmt 7
+
+blastp -query /home/tisidorova/sequence.fasta -db /mnt/storage/project_2023/proteomes/methanocaldococcus.faa -out EHRF1_methanocaldococcus.blast -outfmt 7
+
+## Тепловая карта 
+
+![image](https://github.com/TatyanaSidorova26/Project23_Individual/assets/114301236/bfae9125-cd19-4f4a-8370-f81a9034c97a)
+
+Команды для создания тепловой карты есть в [Colab](https://colab.research.google.com/drive/1J1wPgruZUSCNo0k9wcmvVi2JcQSCExcM?hl=ru#scrollTo=b6-B9x0PNhR9)
+
+Наблюдаются высокие значения e-value у methanocaldococcus, следовательно, эволюция началась с археев. 
+
 
